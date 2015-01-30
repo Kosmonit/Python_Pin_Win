@@ -25,3 +25,6 @@ This helped
 To run python script strace.py with program program.exe use this command:
 
 `pin.exe -t Python_Pin.dll -m strace.py -- program.exe`
+
+# Comments
+This project 32 bit only Pin Tool
