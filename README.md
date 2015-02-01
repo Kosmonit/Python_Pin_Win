@@ -38,7 +38,7 @@ This code don't work on Windows:
 
 `//     fclose(tool);`
 
-And replece on this code:
+And replace on this code:
 
 	 SPPY::PyObject* PyFileObject = SPPY::PyFile_FromString((char *)filename, "r");
 
