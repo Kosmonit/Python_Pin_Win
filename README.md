@@ -22,21 +22,21 @@ This helped
 
 This code don't work on Windows:
 
-//     FILE* tool = fopen(filename, "r");
+`//     FILE* tool = fopen(filename, "r");`
 
-//     if (tool == NULL) {
+`//     if (tool == NULL) {`
 
-//         perror("fopen");
+`//         perror("fopen");`
 
-//         exit(1);
+`//         exit(1);`
 
-//     }
+`//     }`
 
-// 
+`//`
 
-// 	 SPPY::PyRun_SimpleFile(tool, filename);
+`// 	 SPPY::PyRun_SimpleFile(tool, filename);`
 
-//     fclose(tool);
+`//     fclose(tool);`
 
 And replece on this code:
 
