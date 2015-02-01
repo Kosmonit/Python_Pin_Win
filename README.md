@@ -20,6 +20,29 @@ I placed python.h in namespace SPPY:
 
 This helped
 
+This code don't work on Windows:
+
+//     FILE* tool = fopen(filename, "r");
+
+//     if (tool == NULL) {
+
+//         perror("fopen");
+
+//         exit(1);
+
+//     }
+
+// 
+
+// 	 SPPY::PyRun_SimpleFile(tool, filename);
+
+//     fclose(tool);
+
+And replece on this code:
+
+	 SPPY::PyObject* PyFileObject = SPPY::PyFile_FromString((char *)filename, "r");
+
+	 SPPY::PyRun_SimpleFile(SPPY::PyFile_AsFile(PyFileObject), filename);
 
 # Using
 To run python script strace.py with program program.exe use this command:
